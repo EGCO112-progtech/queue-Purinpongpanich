@@ -32,11 +32,8 @@ int calculate(NodePtr q,int customer_no){
     printf(":Cash: ");
     scanf("%d", &cash);
   }while(cash < price);
-  if(cash == price){
-    printf("Thank you\n");
-  }
-  else{
-    printf("Thank you\n");
+  printf("Thank you\n");
+  if(cash != price){
     printf("Change is %d\n",cash-price);
   }
   end :
