@@ -1,5 +1,3 @@
-
-
 typedef struct {
 	 NodePtr headPtr,tailPtr;
 	int size;
@@ -47,7 +45,8 @@ int calculate(NodePtr q,int customer_no){
 
 int dequeue_struct(Queue *q,int customer_no){
    NodePtr t=q->headPtr;
-   calculate(t,customer_no);
+   if(customer_no != 99)
+    calculate(t,customer_no);
    if(t){
    q->size--;
    q->headPtr = t->nextPtr;

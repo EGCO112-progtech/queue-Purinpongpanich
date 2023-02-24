@@ -31,5 +31,8 @@ int main(int argc , char **argv) {
     printf("There is %d ppl left in the queue",q.size);
   else if(q.size > 1)
     printf("There are %d ppl left in the queue",q.size);
+  for(int i = 0;i<q.size;i++){
+    dequeue_struct(&q,99);
+  }
   return 0;
 }
