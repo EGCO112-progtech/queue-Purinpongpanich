@@ -18,7 +18,7 @@ int main(int argc , char **argv) {
    
  for(i=1;i<argc;i++){
         if(strcmp(argv[i],"x")==0){
-            dequeue_struct(&q,customer_no);
+            dequeue_struct(&q,customer_no,0);
             customer_no++;
         }
         else {
@@ -34,7 +34,7 @@ int main(int argc , char **argv) {
   if(q.size > 0){
     printf("Clearing all node\n");
     while(q.size>0){
-      dequeue_struct(&q,99);
+      dequeue_struct(&q,0,1);
     }
   }
   return 0;

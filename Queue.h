@@ -40,9 +40,9 @@ int calculate(NodePtr q,int customer_no){
   return 0;
 }
 
-int dequeue_struct(Queue *q,int customer_no){
+int dequeue_struct(Queue *q,int customer_no,int flag){
    NodePtr t=q->headPtr;
-   if(customer_no != 99)
+   if(flag != 1)
     calculate(t,customer_no);
    if(t){
    q->size--;
