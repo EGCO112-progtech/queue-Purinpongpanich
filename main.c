@@ -33,8 +33,7 @@ int main(int argc , char **argv) {
     printf("There are %d ppl left in the queue\n",q.size);
   if(q.size > 0){
     printf("Clearing all node\n");
-    int temp = q.size;
-    for(int i = 0;i<temp;i++){
+    while(q.size>0){
       dequeue_struct(&q,99);
     }
   }
